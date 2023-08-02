@@ -18,8 +18,8 @@ socket.connect(f"tcp://localhost:5555")    # Service process uses port 5555, cha
 
 ### Formatting Data
 
-Valid English characters include A-Z, a-z, 0-9, symbols in [,.?;:/-'"_()=+], and space ' '. Morse is represented using '.' for short signals
-and '-' for long signals, with a single space between letters and three spaces between words.
+Valid English characters include A-Z, a-z, 0-9, symbols in [,.?;:/-'"_()=+], and space ' '. Morse is represented using period '.' for short signals
+and underscore '_' for long signals, with a single space between letters and three spaces between words.
 
 ### Sending Data
 
