@@ -45,3 +45,7 @@ socket.send("\x02.... . ._.. ._.. ___   .__ ___ ._. ._.. _..".encode())
 response = socket.recv_string()
 print(response)  # 'HELLO WORLD'
 ```
+
+## UML Sequence Diagram
+
+![UML Sequence Diagram](https://github.com/ksnedeker1/morservice/blob/master/img/umldiagram.png)
