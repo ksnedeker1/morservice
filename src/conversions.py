@@ -11,10 +11,6 @@ MORSE_TO_ENGLISH = {
 ENGLISH_TO_MORSE = {v: k for k, v in MORSE_TO_ENGLISH.items()}
 
 
-class ParseError(Exception):
-    pass
-
-
 def english_to_morse(text):
     """
     Converts a string of valid English characters to Morse code.
@@ -23,7 +19,7 @@ def english_to_morse(text):
     """
     text = text.upper()
     if not all(char in ENGLISH_TO_MORSE for char in text):
-        raise ParseError("Input contains invalid characters for conversion to Morse.")
+        raise ValueError("Input contains invalid characters for conversion to Morse.")
     # Morse chars separated by space, words separated by three
     # Trailing space to accommodate parsing of incomplete words
     return ' '.join(ENGLISH_TO_MORSE[char] for char in text) + ' '
