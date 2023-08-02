@@ -20,7 +20,7 @@ def start_service(port=PORT):
 
         Valid Message Characters:
             - English: A-Z, a-z, 0-9, symbols in [,.?;:/-'"_()=+], and space ' '.
-            - Morse: Standard combinations of '.' and '-' representing short and long signals corresponding
+            - Morse: Standard combinations of '.' and '_' representing short and long signals corresponding
                      with the above defined valid English characters. Each character should be separated by
                      a space, and word should be separated by three spaces.
 
